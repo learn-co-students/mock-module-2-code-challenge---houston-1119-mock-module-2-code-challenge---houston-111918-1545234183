@@ -1,0 +1,9 @@
+<h1> The Doggie Detail </h1>
+
+<p><%= link_to "Home of the Dogs", dogs_path %>
+
+<h1> Roof! My name is <%= @dog.name %>. </h1>
+<h2> I am a <%= @dog.breed %>, the best there is.</h2>
+<h3> And I am a/an <%= @dog.age %>!</h3>
+
+<p> My employee names are <%= @dog.employees.map { |employee| employee.first_name }.join(', ') %></p>

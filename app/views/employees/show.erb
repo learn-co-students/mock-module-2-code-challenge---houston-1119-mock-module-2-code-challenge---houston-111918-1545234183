@@ -1,0 +1,11 @@
+<h1> The Doggie Owner </h1>
+
+<p><%= link_to "All of the Employees", employees_path %>
+
+<h1> My name is <%= @employee.first_name + " " + @employee.last_name %>. </h1>
+<h2> My friends call me <%= @employee.alias %>.</h2>
+<h3> My offical job title is <%= @employee.title %>.</h3>
+<h3> I work in the <%= @employee.office %> office.</h3>
+<h3> <%= @employee.img_url %></h3>
+<h3> I belong to my dog owner, <%= @employee.dog.name %>.</h3>
+
