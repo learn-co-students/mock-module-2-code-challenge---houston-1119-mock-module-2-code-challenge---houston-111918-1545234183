@@ -14,7 +14,8 @@ class EmployeesController < ApplicationController
     redirect_to employee_path(employee)
   end
   def edit
-    @employee = Dog.find(params[:id])
+    @employee = Employee.find(params[:id])
+    @dogs = Dog.all
   end
   def update
     employee = Employee.find(params[:id])
