@@ -1,0 +1,7 @@
+<%= form_with model: Employee.new do |f| %>
+  <%= f.text_field :alias, placeholder: "Alias" %>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :office, placeholder: "Office" %>
+
+  <%= f.submit %>
+<% end %>

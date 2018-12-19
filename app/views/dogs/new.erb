@@ -1,0 +1,9 @@
+<h3>Dog Form</h3>
+
+<%= form_with model: Dog.new do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.text_field :breed, placeholder: "Breed" %>
+  <%= f.text_field :age, placeholder: "Age" %>
+
+  <%= f.submit %>
+<% end %>
