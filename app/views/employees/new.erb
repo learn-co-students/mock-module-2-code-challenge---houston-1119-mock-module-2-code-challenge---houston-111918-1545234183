@@ -1,0 +1,10 @@
+<h1>Birth a new Employee</h1>
+<p><%= form_with model: Employee.new do |form|%><p>
+    <p>First Name: <%= form.text_field :first_name%><p>
+    <p>Last Name: <%= form.text_field :last_name%><p>
+    <p>Alias: <%= form.text_field :alias%><p>
+    <p>Position: <%= form.text_field :title%><p>
+    <p>Office Location: <%= form.text_field :office%><p>
+    <p>Dog: <%= form.number_field :dog_id%><p>
+    <%= form.submit%>
+<%end%>
