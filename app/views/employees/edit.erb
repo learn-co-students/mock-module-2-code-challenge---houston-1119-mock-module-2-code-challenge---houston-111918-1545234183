@@ -1,10 +1,10 @@
-
 <%= link_to 'All Dogs', dogs_path %> <br>
 <%= link_to 'All Employees', employees_path %> <br>
+<%= link_to "Create an Employee", new_employee_path %><br>
 
 
 <h2>
-Create a New Employee:
+Edit a New Employee:
 </h2>
 
 <%= form_with model: @employee do |emp| %>
@@ -27,6 +27,11 @@ Create a New Employee:
     <p>
         Office: <%= emp.text_field :office %>
     </p>
+
+    <p>
+        Image (URL): <%= emp.text_field :img_url %>
+    </p>
+
 
     <p>
         Belongs To: <%= emp.collection_select :dog_id, Dog.all, :id, :name %>
