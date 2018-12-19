@@ -1,0 +1,12 @@
+<h1>Employee Form</h1>
+
+<%= form_with model: @employee do |f| %>
+  <%= f.text_field :first_name, placeholder: 'First Name' %>
+  <%= f.text_field :last_name, placeholder: 'Last Name'  %>
+  <%= f.text_field :alias, placeholder: 'Alias'  %>
+  <%= f.text_field :title, placeholder: 'Title'  %>
+  <%= f.text_field :office, placeholder: 'Office'  %>
+  <%= f.text_field :img_url, placeholder: 'Image URL'  %>
+  <%= f.collection_select :dog_id, @dogs, :id, :name %>
+  <%= f.submit %>
+<% end %>

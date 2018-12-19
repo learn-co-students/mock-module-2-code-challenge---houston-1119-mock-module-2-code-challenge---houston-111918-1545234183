@@ -1,0 +1,7 @@
+<%= link_to 'Sort These Doggies by most employees', sort_path %>
+
+
+<h1>Here Are The Dogs:</h1>
+<% @dogs.each do |dog| %>
+  <p><%= link_to dog.name, dog %></p>
+<% end %>
