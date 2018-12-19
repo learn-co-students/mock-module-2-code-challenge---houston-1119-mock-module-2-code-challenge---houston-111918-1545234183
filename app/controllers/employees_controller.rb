@@ -13,6 +13,14 @@ class EmployeesController < ApplicationController
     employee = Employee.create(employee_params)
     redirect_to employee_path(employee)
   end
+  def edit
+    @employee = Dog.find(params[:id])
+  end
+  def update
+    employee = Employee.find(params[:id])
+    employee.update(employee_params)
+    redirect_to employee_path(employee)
+  end
 
   private
   def employee_params
