@@ -1,0 +1,4 @@
+<h1>Meet <%= @dog.name%>!</h1><br>
+<p>They're a lovely <%= @dog.breed%> <%= @dog.age%>!<p>
+<p>These employees take care of <%= @dog.name%><p>
+<%= @dog.employees.map{|employee| employee.first_name}.join(", ")%>
