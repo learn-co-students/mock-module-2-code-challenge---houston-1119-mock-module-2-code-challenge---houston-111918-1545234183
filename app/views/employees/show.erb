@@ -1,0 +1,22 @@
+<%= link_to 'All Dogs', '/dogs' %> <br>
+<%= link_to 'All Employees', '/employees' %> <br>
+<%= link_to "Create an Employee", "./new" %><br>
+
+<h2>
+
+Hi, my name is <%= @employee.full_name %>. <br>
+
+<ul> 
+<li>Title: <%= @employee.title %>  </li>
+<li>Alias: <%= @employee.alias %>  </li>
+<li>Office: <%= @employee.office %>  </li>
+
+</ul>
+
+<br>
+I belong to: <br>
+<ul>
+    <li> <%= link_to @employee.dog.name, @employee.dog %> </li>
+</ul>
+
+</h2>
