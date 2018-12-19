@@ -1,0 +1,8 @@
+<h1> Something is wrong with that dog's info!!! Let's change it. </h1>
+
+<%= form_with model: @dogs do |f| %>
+<%= f.text_field :name, placeholder: "NAME" %>
+<%= f.text_field :breed, placeholder: "BREED" %>
+<%= f.text_field :age, placeholder: "AGE" %>
+<%= f.submit %>
+<% end %>
