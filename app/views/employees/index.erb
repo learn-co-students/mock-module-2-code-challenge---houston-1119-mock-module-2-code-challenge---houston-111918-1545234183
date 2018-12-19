@@ -2,4 +2,5 @@
 
 <% @employee.each do |employee| %>
 <div><h3><%= link_to employee.first_name, employee %></h3></div>
-<% end %>
+<% end %><br>
+<h1><%=link_to "Give Birth To a New Labor Body", new_employee_path%></h1>

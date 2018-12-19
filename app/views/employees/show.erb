@@ -4,3 +4,6 @@
 <p>Known Alias: <%= @employee.alias%><p>
 <p>Position: <%= @employee.title%><p>
 <p>Location: <%= @employee.office%><p>
+
+<%= button_to "Edit Employee", edit_employee_url, :method => :get %>
+<%= button_to "Kill Employee", @employee, :method => :delete %>
