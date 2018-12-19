@@ -1,0 +1,10 @@
+<h1> Please put in the new hires information. </h1>
+
+<%= form_with model: @employee do |form| %>
+<%= form.text_field :first_name, placeholder: 'First Name' %>
+<%= form.text_field :alias, placeholder: 'Alias (optional)' %>
+<%= form.text_field :title, placeholder: 'Job Title' %>
+<%= form.text_field :office, placeholder: 'Office Location' %>
+<%= form.text_field :dog_id, placeholder: 'Dog Name'%>
+<%= form.submit %>
+<% end %>

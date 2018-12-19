@@ -1,0 +1,8 @@
+<h1> Please place new dogs information below. </h1>
+
+<%= form_with model: @dog do |form| %>
+<%= form.text_field :name, placeholder: 'Name' %>
+<%= form.text_field :breed, placeholder: 'Breed' %>
+<%= form.text_field :age, placeholder: 'Age' %>
+<%= form.submit %>
+<% end %>
