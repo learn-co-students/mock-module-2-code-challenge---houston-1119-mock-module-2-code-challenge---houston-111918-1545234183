@@ -6,15 +6,18 @@
 
 Hi, my name is <%= @employee.full_name %>. <br>
 
-<ul> 
-<li>Title: <%= @employee.title %>  </li>
-<li>Alias: <%= @employee.alias %>  </li>
-<li>Office: <%= @employee.office %>  </li>
+<img src="<%= @employee.img_url %>" height="250" width="400"/>
 
+<ul> 
+    <li>Title: <%= @employee.title %>  </li>
+    <li>Alias: <%= @employee.alias %>  </li>
+    <li>Office: <%= @employee.office %>  </li>
 </ul>
 
 <br>
-I belong to: <br>
+I belong to: 
+<br>
+
 <ul>
     <li> <%= link_to @employee.dog.name, @employee.dog %> </li>
 </ul>
