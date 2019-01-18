@@ -1,0 +1,26 @@
+<%= link_to 'All Dogs', dogs_path %> <br>
+<%= link_to 'All Employees', employees_path %> <br>
+<%= link_to "Create an Employee", new_employee_path %><br>
+<%= link_to "Edit this Employee", edit_employee_path %><br>
+
+<h2>
+
+Hi, my name is <%= @employee.full_name %>. <br>
+
+<img src="<%= @employee.img_url %>" height="250" width="400"/>
+
+<ul> 
+    <li>Title: <%= @employee.title %>  </li>
+    <li>Alias: <%= @employee.alias %>  </li>
+    <li>Office: <%= @employee.office %>  </li>
+</ul>
+
+<br>
+I belong to: 
+<br>
+
+<ul>
+    <li> <%= link_to @employee.dog.name, @employee.dog %> </li>
+</ul>
+
+</h2>

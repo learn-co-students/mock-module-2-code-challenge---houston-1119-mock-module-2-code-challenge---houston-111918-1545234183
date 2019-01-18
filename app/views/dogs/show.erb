@@ -1,0 +1,19 @@
+<%= link_to 'All Dogs', dogs_path %> <br>
+<%= link_to 'All Employees', employees_path %> <br>
+<%= link_to "Create an Employee", new_employee_path %><br>
+
+<h2>
+
+Hi, my name is <%= @dog.name %>. <br>
+
+I am a <%= @dog.age %> <%= @dog.breed %>.<br><br>
+
+My employees include: <br>
+
+<ul>
+    <% @dog.employees.each do |emp| %>
+         <li> <%= link_to emp.full_name, emp %> </li>
+    <% end %>
+</ul>
+
+</h2>

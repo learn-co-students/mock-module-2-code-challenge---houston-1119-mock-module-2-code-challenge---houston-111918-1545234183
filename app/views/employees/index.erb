@@ -1,0 +1,15 @@
+<%= link_to 'All Dogs', dogs_path %> <br>
+<%= link_to 'All Employees', employees_path %> <br>
+
+<h1>The Dunder Mifflin Paper Company</h1>
+<h2>Here's a list of all of our employees: </h2>
+
+<h3>
+    <ul>
+        <% @employees.each do |employee| %>
+            <li>
+                <%= link_to employee.full_name, employee %>
+            </li>
+        <% end %>
+    </ul>
+</h3>

@@ -1,0 +1,39 @@
+
+<%= link_to 'All Dogs', dogs_path %> <br>
+<%= link_to 'All Employees', employees_path %> <br>
+
+
+<h2>
+Create a New Employee:
+</h2>
+
+<%= form_with model: @employee do |emp| %>
+    <p>
+        First Name: <%= emp.text_field :first_name %>
+    </p>
+
+    <p>
+        Last Name: <%= emp.text_field :last_name %>
+    </p>
+
+    <p>
+        Alias: <%= emp.text_field :alias %>
+    </p>
+
+        <p>
+        Title: <%= emp.text_field :title %>
+    </p>
+
+    <p>
+        Office: <%= emp.text_field :office %>
+    </p>
+
+    <p>
+        Belongs To: <%= emp.collection_select :dog_id, Dog.all, :id, :name %>
+    </p>
+
+    <p>
+        <%= emp.submit %>
+    </p>
+
+<% end %>
